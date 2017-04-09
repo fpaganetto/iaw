@@ -1,0 +1,25 @@
+html,body {
+  height: 100%;
+  background-image: url('../img/fondo-gtav.jpg');
+  background-size: cover;
+}
+
+.navegador {
+  background-color: black;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.sin-margenes {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+.main-content {
+
+}
+
+.auto-editado {
+  background-color: white;
+}
