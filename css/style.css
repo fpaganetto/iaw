@@ -2,6 +2,7 @@ html,body {
   height: 100%;
   background-image: url('../img/fondo-gtav.jpg');
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .navegador {
