@@ -1,3 +1,21 @@
+@font-face {
+    font-family: 'Font_Logo'; /*a name to be used later*/
+    src: url('../fonts/SignPainter-HouseScript.ttf'); /*URL to font*/
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Font_Body'; /*a name to be used later*/
+    src: url('../fonts/ChaletLondonNineteenSixty.ttf'); /*URL to font*/
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Font_Mayus'; /*a name to be used later*/
+    src: url('../fonts/BEBAS___.ttf'); /*URL to font*/
+    font-weight: bold;
+}
+
 html,body {
   height: 100%;
   background-image: url('../img/fondo-gtav.jpg');
@@ -8,6 +26,10 @@ html,body {
   background-color: black;
   padding-left: 60px;
   padding-right: 60px;
+  color: white;
+  border-radius: 0;
+  border-color: black;
+  font-family: Font_Body;
 }
 
 .sin-margenes {
@@ -17,9 +39,19 @@ html,body {
 
 
 .main-content {
-
+  font-family: Font_Body;
 }
 
 .auto-editado {
   background-color: white;
+}
+
+.marca_auto {
+  font-family: Font_Logo;
+  font-size: 250%;
+  color: white !important;
+}
+
+.mayus {
+  font-family: Font_Mayus;
 }
