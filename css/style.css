@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'SignPainter';
+  src:  url(fonts/SignPainter-HouseScript.ttf) format('truetype'),
+}
 html,body {
   height: 100%;
   background-image: url('../img/fondo-gtav.jpg');
@@ -16,11 +20,23 @@ html,body {
   padding: 0px;
 }
 
-
-.main-content {
-
-}
-
 .auto-editado {
   background-color: white;
+}
+
+.navbar-brand{
+  font-family: 'SignPainter';
+}
+
+.navbar-brand{
+  font-family: 'SignPainter';
+  font-size: 400%;
+}
+.navbar-default .navbar-brand{
+  color: white;
+}
+
+.navbar-default{
+  border-color: black;
+  border-radius: 0px;
 }
