@@ -1,0 +1,4 @@
+Color-Amarillo,Verde,Rojo,Azul,Cromado
+Llantas-Shadow,Flare,Dollar,Cosmo,Slit Six
+Polarizado-Ninguno,Light Smoke,Dark Smoke,Limo
+Motor-Motor de serie,Mejora nivel 1,Mejora nivel 2,Mejora nivel 3,Mejora nivel 4

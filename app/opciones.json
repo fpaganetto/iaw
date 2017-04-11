@@ -1,0 +1,20 @@
+{
+  "opciones": [
+    {
+      "nombre": "Color",
+      "valores": ["Amarillo", "Verde", "Rojo", "Azul", "Cromado"]
+    },
+    {
+      "nombre": "Llantas",
+      "valores": ["Shadow", "Flare", "Dollar", "Cosmo", "Slit Six"]
+    },
+    {
+      "nombre": "Polarizado",
+      "valores": ["Ninguno", "Light Smoke", "Dark Smoke", "Limo"]
+    },
+    {
+      "nombre": "Motor",
+      "valores": ["Motor de serie", "Mejora nivel 1", "Mejora nivel 2", "Mejora nivel 3", "Mejora nivel 4"]
+    }
+  ]
+}

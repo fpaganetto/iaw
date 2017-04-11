@@ -32,7 +32,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Adder</a>
+            <a class="navbar-brand marca_auto" href="#">Adder</a>
           </div>
  
 	 		
@@ -96,84 +96,10 @@
 			</div> <!-- Carrousell -->
 		</div> <!-- row -->
 
-
-        <div class="row">
-          <div class="panel-group col-lg-4" id="accordion" role="tablist" aria-multiselectable="true">
-            <div class="panel panel-default">
-              <div class="panel-heading" role="tab" id="headingOne">
-                <h4 class="panel-title">
-                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Color
-                  </a>
-                </h4>
-              </div>
-              <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-		        <ul class="list-group">
-			        <li class="list-group-item">Amarillo</li>
-			        <li class="list-group-item">Verde</li>
-			        <li class="list-group-item">Rojo</li>
-			        <li class="list-group-item">Azul</li>
-			        <li class="list-group-item">Cromado</li>
-		        </ul>
-              </div>
-            </div>
-
-            <div class="panel panel-default">
-              <div class="panel-heading" role="tab" id="headingTwo">
-                <h4 class="panel-title">
-                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Llantas
-                  </a>
-                </h4>
-              </div>
-              <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                  <ul class="list-group"> <!-- A SER CARGADO DINÁMICAMENTE (JSON?) -->
-                    <li class="list-group-item">Shadow</li>
-                    <li class="list-group-item">Flare</li>
-                    <li class="list-group-item">Dollar</li>
-                    <li class="list-group-item">Cosmo</li>
-                    <li class="list-group-item">Slit Six</li>
-                  </ul>
-              </div>
-            </div>
-            <div class="panel panel-default">
-              <div class="panel-heading" role="tab" id="headingThree">
-                <h4 class="panel-title">
-                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Polarizado
-                  </a>
-                </h4>
-              </div>
-              <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                  <ul class="list-group"> <!-- A SER CARGADO DINÁMICAMENTE (JSON?) -->
-                    <li class="list-group-item">Ninguno</li>
-                    <li class="list-group-item">Light Smoke</li>
-                    <li class="list-group-item">Dark Smoke</li>
-                    <li class="list-group-item">Limo</li>
-                  </ul>
-              </div>
-            </div>
-            <div class="panel panel-default">
-              <div class="panel-heading" role="tab" id="headingFour">
-                <h4 class="panel-title">
-                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
-                    Motor
-                  </a>
-                </h4>
-              </div>
-              <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                  <ul class="list-group"> <!-- A SER CARGADO DINÁMICAMENTE (JSON?) -->
-                    <li class="list-group-item">Motor de serie</li>
-                    <li class="list-group-item">Mejora nivel 1</li>
-                    <li class="list-group-item">Mejora nivel 2</li>
-                    <li class="list-group-item">Mejora nivel 3</li>
-                    <li class="list-group-item">Mejora nivel 4</li>
-                  </ul>
-              </div>
-            </div>
+          <div class="panel-group col-lg-5" id="accordionOpciones" role="tablist" aria-multiselectable="true">
           </div><!--end accordion -->
 
-          <div class="col-lg-8 auto-editado">
+          <div class="col-lg-7 auto-editado">
             "Auto en edición, acá"
           </div>
         </div> <!-- END ROW -->
@@ -183,16 +109,17 @@
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
- 
- 
+
 	<footer class="footer">
       <div class="container">
         <p class="text-muted">Truffade motors</p>
       </div>
     </footer>
 
+    <script src="js/jquery-3.2.0.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="app/cargadorOpciones.js"></script>
   </body>
 </html>
