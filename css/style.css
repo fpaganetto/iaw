@@ -8,7 +8,7 @@
 }
 @font-face {
     font-family: 'Font_Mayus'; /*a name to be used later*/
-    src: url('../fonts/BEBAS___.ttf'); /*URL to font*/
+    src: url('../fonts/Bebas.ttf'); /*URL to font*/
     font-weight: bold;
 }
 
@@ -21,22 +21,17 @@ html,body {
 
 .navbar {
   background-color: black;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   color: white;
   border-radius: 0;
   border-color: black;
-  font-family: Font_Body;
 
   /*position: fixed; /* Set the navbar to fixed position */
   /*top: 0; /* Position the navbar at the top of the page */
   /*width: 100%; /* Full width */
-}
-
-.navbar-brand{
-  font-family: 'SignPainter';
-  font-size: 400%;
-  padding: 20px;
 }
 
 .navbar-default .navbar-brand{
@@ -71,7 +66,6 @@ html,body {
 
 .main-content {
   padding-top: 65px;
-  font-family: Font_Body;
 }
 
 .auto-editado {
@@ -80,8 +74,8 @@ html,body {
 
 .marca_auto {
   font-family: SignPainter;
-  font-size: 250%;
-  color: white !important;
+  font-size: 400%;
+  padding: 20px;
 }
 
 .carousel{
