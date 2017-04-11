@@ -16,8 +16,8 @@ html,body {
 
 .navbar {
   background-color: black;
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 100px;
+  padding-right: 100px;
   padding-top: 15px;
   padding-bottom: 15px;
 
@@ -67,5 +67,5 @@ html,body {
 }
 
 .carousel{
-  margin-bottom: 15;
+  margin: 50px;
 }
