@@ -1,10 +1,15 @@
 @font-face {
   font-family: 'SignPainter';
-  src:  url(fonts/SignPainter-HouseScript.ttf) format('truetype'),
+  src:  url('../fonts/SignPainter-HouseScript.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Oswald';
-  src:  url(fonts/Oswald-Light.ttf) format('truetype'),
+  src:  url('../fonts/Oswald-Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Font_Mayus'; /*a name to be used later*/
+    src: url('../fonts/BEBAS___.ttf'); /*URL to font*/
+    font-weight: bold;
 }
 
 html,body {
@@ -62,10 +67,25 @@ html,body {
   padding: 0px;
 }
 
+.main-content {
+  padding-top: 65px;
+  font-family: Font_Body;
+}
+
 .auto-editado {
   background-color: white;
 }
 
+.marca_auto {
+  font-family: SignPainter;
+  font-size: 250%;
+  color: white !important;
+}
+
 .carousel{
   margin: 50px;
+}
+
+.mayus {
+  font-family: Font_Mayus;
 }
