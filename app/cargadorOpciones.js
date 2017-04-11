@@ -39,8 +39,8 @@ function cargarOpciones(jsonOpciones) {
     nombreOpcion.innerHTML = opcion.nombre;
 
     var colapsable = document.createElement("div");
-    colapsable.setAttribute("id", "collapseOne");
-    colapsable.setAttribute("class", "panel-collapse collapse in");
+    colapsable.setAttribute("id", "collapse"+i);
+    colapsable.setAttribute("class", "panel-collapse collapse");
     colapsable.setAttribute("role", "tabpanel");
     colapsable.setAttribute("aria-labelledby", "heading"+i);
 
