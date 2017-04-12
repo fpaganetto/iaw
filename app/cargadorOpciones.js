@@ -50,7 +50,7 @@ function cargarOpciones(jsonOpciones) {
     //console.log(opcion.valores.length); DEBUG
     for (j = 0; j < opcion.valores.length; j++) {
       var boton = document.createElement("button");
-      boton.setAttribute("class","btn btn-default");
+      boton.setAttribute("class","btn btn-default btn-personalizar");
       boton.setAttribute("type","button");
 
       //var input = document.createElement("input");
