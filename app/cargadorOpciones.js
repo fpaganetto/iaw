@@ -44,20 +44,29 @@ function cargarOpciones(jsonOpciones) {
     colapsable.setAttribute("role", "tabpanel");
     colapsable.setAttribute("aria-labelledby", "heading"+i);
 
-    var listaOpciones = document.createElement("ul");
-    listaOpciones.setAttribute("class","list-group");
-
+    var botonesVertical = document.createElement("div");
+    botonesVertical.setAttribute("class","btn-group-vertical");
+    botonesVertical.setAttribute("data-toggle","buttons")
     //console.log(opcion.valores.length); DEBUG
     for (j = 0; j < opcion.valores.length; j++) {
-      var li = document.createElement("li");
-      li.setAttribute("class","list-group-item");
-      li.innerHTML = opcion.valores[j];
+      var boton = document.createElement("button");
+      boton.setAttribute("class","btn btn-default");
+      boton.setAttribute("type","button");
+
+      //var input = document.createElement("input");
+      /*input.setAttribute("type","radio");
+      input.setAttribute("name","options");
+      input.setAttribute("id","option"+j);
+      input.setAttribute("autocomplete","off");*/
+      
+      boton.innerHTML+="<input type=\"radio\" name=\"options\" id=\"option1\" autocomplete=\"off\" checked>";
+      boton.innerHTML+= opcion.valores[j];
       //console.log(" "+opcion.valores[j]); DEBUG
 
-      listaOpciones.appendChild(li);
+      botonesVertical.appendChild(boton);
     }
 
-    colapsable.appendChild(listaOpciones);
+    colapsable.appendChild(botonesVertical);
 
     h4.appendChild(nombreOpcion);
     heading.appendChild(h4);
