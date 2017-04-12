@@ -40,6 +40,9 @@ html,body {
 .navbar-default .navbar-brand{
   color: white;
 }
+.navbar-default .navbar-nav{
+  color: white;
+}
 
 .nav{
   font-family: 'Oswald';
