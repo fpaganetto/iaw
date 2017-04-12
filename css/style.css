@@ -85,3 +85,9 @@ html,body {
 .mayus {
   font-family: Font_Mayus;
 }
+.btn-group-vertical {
+  width:100%;
+}
+.btn-default{
+  text-align: left;
+}
