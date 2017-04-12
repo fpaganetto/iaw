@@ -40,16 +40,13 @@ html,body {
 .navbar-default .navbar-brand{
   color: white;
 }
-.navbar-default .navbar-nav{
+.navbar-default .navbar-nav>li>a{
   color: white;
 }
 
 .nav{
   font-family: 'Oswald';
-  font-size: 120%;
-}
-.nav>li>a{
-  color:white; /*XXX Como evito que el javascript de boostrap me pise el css*/
+  font-size: 130%;
 }
 
 .navbar-default{
