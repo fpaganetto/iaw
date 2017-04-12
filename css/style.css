@@ -71,10 +71,6 @@ html,body {
   padding-top: 65px;
 }
 
-.auto-editado {
-  background-color: white;
-}
-
 .marca_auto {
   font-family: SignPainter;
   font-size: 400%;
@@ -99,4 +95,5 @@ html,body {
   color: white;
   background-color: black;
   opacity: 0.2;
+  margin-top: 5%
 }
