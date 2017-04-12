@@ -44,22 +44,20 @@ function cargarOpciones(jsonOpciones) {
     colapsable.setAttribute("role", "tabpanel");
     colapsable.setAttribute("aria-labelledby", "heading"+i);
 
-    var panelOpciones = document.createElement("div");
-    panelOpciones.setAttribute("class", "panel-body");
-
-    var ul = document.createElement("ul");
+    var listaOpciones = document.createElement("ul");
+    listaOpciones.setAttribute("class","list-group");
 
     //console.log(opcion.valores.length); DEBUG
     for (j = 0; j < opcion.valores.length; j++) {
       var li = document.createElement("li");
+      li.setAttribute("class","list-group-item");
       li.innerHTML = opcion.valores[j];
       //console.log(" "+opcion.valores[j]); DEBUG
 
-      ul.appendChild(li);
+      listaOpciones.appendChild(li);
     }
 
-    panelOpciones.appendChild(ul);
-    colapsable.appendChild(panelOpciones);
+    colapsable.appendChild(listaOpciones);
 
     h4.appendChild(nombreOpcion);
     heading.appendChild(h4);
