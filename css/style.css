@@ -17,7 +17,8 @@
 }
 html,body {
   height: 100%;
-  background-image: url('../img/fondo-gtav.jpg');
+  background-image: url('../img/los-santos-nightd.jpg');
+  background-color: black;
   background-size: cover;
   background-attachment: fixed;
 }
