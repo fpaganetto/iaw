@@ -52,6 +52,7 @@ function cargarOpciones(jsonOpciones) {
       var boton = document.createElement("button");
       boton.setAttribute("class","btn btn-default btn-personalizar");
       boton.setAttribute("type","button");
+      boton.setAttribute("id","radiobt");
 
       //var input = document.createElement("input");
       /*input.setAttribute("type","radio");
