@@ -131,8 +131,9 @@ html,body {
   margin-top: 5%
 }
 
-.imagen-opcion {
-  position:absolute;
-  top: 0px;
-  left: 0px;
+canvas {
+  background-image: url('../img/lsc.jpg');
+  background-size: 100% 100%;
+  width: 100%;
+  height: auto;
 }
