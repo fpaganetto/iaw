@@ -90,10 +90,6 @@ html,body {
 .panel-default{
   border-radius: 0px;
 }
-/*.list-group-item{
-  background-color: black;
-  color: white;
-}*/
 
 .sin-margenes {
   margin: 0px;
@@ -137,3 +133,18 @@ canvas {
   width: 100%;
   height: auto;
 }
+
+.panel-default>.panel-heading{
+  background-color: #1f1f1f;
+  color: white;
+}
+.btn-default{
+  color: white;
+  background-color: #333;
+  /*border-color:*/
+}
+/*.btn-default:hover{
+  color:
+  background-color:
+  border-color
+}*/
