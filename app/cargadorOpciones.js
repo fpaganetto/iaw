@@ -62,7 +62,7 @@ function cargarOpciones(jsonOpciones) {
       input.setAttribute("id","option"+j);
       input.setAttribute("autocomplete","off");*/
 
-    //  boton.innerHTML+="<input type=\"radio\" name=\"options\" id=\"option1\" autocomplete=\"off\" checked>";
+      boton.innerHTML+="<input type=\"radio\" name=\"options\" id=\"option1\" autocomplete=\"off\" checked>";
       boton.innerHTML+= opcion.valores[j];
       //console.log(" "+opcion.valores[j]); DEBUG
 
