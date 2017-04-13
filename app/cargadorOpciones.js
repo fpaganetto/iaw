@@ -48,19 +48,21 @@ function cargarOpciones(jsonOpciones) {
     botonesVertical.setAttribute("class","btn-group-vertical");
     botonesVertical.setAttribute("data-toggle","buttons")
     //console.log(opcion.valores.length); DEBUG
+
     for (j = 0; j < opcion.valores.length; j++) {
-      var boton = document.createElement("button");
+      var boton = document.createElement("div");
       boton.setAttribute("class","btn btn-default btn-personalizar");
-      boton.setAttribute("type","button");
-      boton.setAttribute("id","radiobt");
+      //boton.setAttribute("type","button");
+      boton.setAttribute("id", opcion.nombre+"-radiobt"+j); //los id se repetirán en cada item!!! "Element IDs should be unique within the entire document"
+      boton.setAttribute("onclick", "opcionSeleccionada(\""+opcion.nombre+"\", \""+opcion.valores[j]+"\")");
 
       //var input = document.createElement("input");
       /*input.setAttribute("type","radio");
       input.setAttribute("name","options");
       input.setAttribute("id","option"+j);
       input.setAttribute("autocomplete","off");*/
-      
-      boton.innerHTML+="<input type=\"radio\" name=\"options\" id=\"option1\" autocomplete=\"off\" checked>";
+
+    //  boton.innerHTML+="<input type=\"radio\" name=\"options\" id=\"option1\" autocomplete=\"off\" checked>";
       boton.innerHTML+= opcion.valores[j];
       //console.log(" "+opcion.valores[j]); DEBUG
 

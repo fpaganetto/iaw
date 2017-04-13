@@ -51,10 +51,10 @@ html,body {
   height: 200%;
   opacity: 0;
   transform: rotate(10deg);
-  
+
   background: rgba(255, 255, 255, 0.13);
   background: linear-gradient(
-    to right, 
+    to right,
     rgba(0, 0, 0, 0.13) 0%,
     rgba(0, 0, 0, 0.13) 77%,
     rgba(0, 0, 0, 0.5) 92%,
@@ -131,3 +131,8 @@ html,body {
   margin-top: 5%
 }
 
+.imagen-opcion {
+  position:absolute;
+  top: 0px;
+  left: 0px;
+}
