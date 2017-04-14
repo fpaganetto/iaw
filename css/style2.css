@@ -101,7 +101,7 @@ html,body {
 }
 
 .main-content {
-  padding-top: 65px;
+  padding-top: 80px;
 }
 
 .marca_auto {
@@ -136,4 +136,8 @@ canvas {
   background-size: 100% 100%;
   width: 100%;
   height: auto;
+}
+
+.carousel-background{
+  background-color: rgba(255,255,255,0.1);
 }

@@ -97,7 +97,7 @@ html,body {
 }
 
 .main-content {
-  padding-top: 65px;
+  padding-top: 80px;
 }
 
 .marca_auto {
@@ -148,3 +148,6 @@ canvas {
   background-color:
   border-color
 }*/
+.carousel-background{
+  background-color: rgba(0,0,0,0.5);
+}
