@@ -13,15 +13,14 @@ request.onload = function() { //lo que ocurre al recibir la respuesta del servid
 //Se encarga de poblar el html con las opciones recibidas en el objeto JSON
 function cargarOpciones(jsonOpciones) {
   var opciones = jsonOpciones["opciones"];
-  var cookieAuto = JSON.parse(getCookie("autoPersonalizado"));
+  var cookieAuto = getCookie("autoPersonalizado");
   var recordarAuto = false;
-  console.log("Cookie: ");
-  console.log(cookieAuto);
-  console.log("\nOpciones: "+opciones);
-
   //Comparamos que las opciones de la cookie y el modelo extraído del servidor son idénticos para evitar problemas
   //Sólo vamos a cargar los datos de la cookie en la aplicación si la descripción de la cookie coincide con la del modelo, sino son versiones distintas
   if (cookieAuto != "") {
+    cookieAuto = JSON.parse(getCookie("autoPersonalizado")); //si la cookie existe, parsearlo para obtener los datos de la cookie
+    console.log("Cookie: ");
+    console.log(cookieAuto);
     var nombresCookie = Object.keys(cookieAuto);
     recordarAuto = (nombresCookie.length == opciones.length);
     console.log(nombresCookie);
