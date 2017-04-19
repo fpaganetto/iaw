@@ -8,34 +8,16 @@ request.send();
 request.onload = function() { //lo que ocurre al recibir la respuesta del servidor
   var opciones = request.response;
   cargarOpciones(opciones);
+  cargarRecordado();
 }
 
 //Se encarga de poblar el html con las opciones recibidas en el objeto JSON
 function cargarOpciones(jsonOpciones) {
   var opciones = jsonOpciones["opciones"];
-  var cookieAuto = getCookie("autoPersonalizado");
-  var recordarAuto = false;
-  //Comparamos que las opciones de la cookie y el modelo extraído del servidor son idénticos para evitar problemas
-  //Sólo vamos a cargar los datos de la cookie en la aplicación si la descripción de la cookie coincide con la del modelo, sino son versiones distintas
-  if (cookieAuto != "") {
-    cookieAuto = JSON.parse(getCookie("autoPersonalizado")); //si la cookie existe, parsearlo para obtener los datos de la cookie
-    console.log("Cookie: ");
-    console.log(cookieAuto);
-    var nombresCookie = Object.keys(cookieAuto);
-    recordarAuto = (nombresCookie.length == opciones.length);
-    console.log(nombresCookie);
-    for (i = 0; (recordarAuto && i < opciones.length); i++) {
-      recordarAuto = (nombresCookie[i] == opciones[i].nombre);
-    }
-  }
-  console.log("Recordar: "+recordarAuto);
 
   //Creamos un elemento del acordeón por cada opcion y un elemento de lista por cada valor posible
   for (i = 0; i < opciones.length; i++) {
     var opcion = opciones[i];
-    if (!recordarAuto) {
-      autoPersonalizado[opcion.nombre] = ""; //agregamos al objeto el campo "opcion.nombre" (que es un string como "Color") para luego poder asignarle valores
-    }
     var panel = document.createElement("div");
     panel.setAttribute("class", "panel panel-default");
 
@@ -69,13 +51,7 @@ function cargarOpciones(jsonOpciones) {
 
     for (j = 0; j < opcion.valores.length; j++) {
       var boton = document.createElement("div");
-      if (recordarAuto && opcion.valores[j] == cookieAuto[opcion.nombre]) {
-        boton.setAttribute("class","btn btn-default btn-personalizar active");
-        opcionSeleccionada(opcion.nombre, opcion.valores[j]); //el objeto autoPersonalizado se actualiza apropiadamente
-      }
-      else {
-        boton.setAttribute("class","btn btn-default btn-personalizar");
-      }
+      boton.setAttribute("class","btn btn-default btn-personalizar");
       boton.setAttribute("id", opcion.nombre+"-radiobt"+j);
       boton.setAttribute("onclick", "opcionSeleccionada(\""+opcion.nombre+"\", \""+opcion.valores[j]+"\")");
 
@@ -98,10 +74,18 @@ function cargarOpciones(jsonOpciones) {
   console.log(autoPersonalizado);
 }
 
-
+function cargarRecordado(){
+	var cookieAuto = JSON.parse(getCookie("autoPersonalizado"));
+	//Opcion: Color, Llantas, Polarizado, Motor...
+	for(var opcion in cookieAuto){
+    	opcionSeleccionada(opcion,cookieAuto[opcion]);
+		var boton = $(".btn-personalizar:contains("+cookieAuto[opcion]+")");
+		boton.addClass("active");
+	}
+}
 
 function opcionSeleccionada(opcion, valor) {
-	glyphOk(opcion);
+glyphOk(opcion);
   dibujar(opcion,valor);
   autoPersonalizado[opcion] = valor; //guardamos en el objeto el cambio
   console.log(autoPersonalizado);
@@ -140,3 +124,8 @@ $("#recordar").click(function() {
   setCookie("autoPersonalizado", JSON.stringify(autoPersonalizado), 30); //guardamos el auto como un string en una cookie, válida por 30 días
   console.log("Personalización registrada")
 });
+
+$("#olvidar").click(function eraseCookie(/*name*/) {
+    document.cookie = "autoPersonalizado" + '=; Max-Age=0'
+    location.reload(true); //Se actualiza para borrar las cosas
+})
