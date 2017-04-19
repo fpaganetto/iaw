@@ -75,6 +75,9 @@ function cargarOpciones(jsonOpciones) {
 }
 
 function cargarRecordado(){
+	if(getCookie("autoPersonalizado")=="")
+		return;
+
 	var cookieAuto = JSON.parse(getCookie("autoPersonalizado"));
 	//Opcion: Color, Llantas, Polarizado, Motor...
 	for(var opcion in cookieAuto){
