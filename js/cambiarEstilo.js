@@ -18,5 +18,6 @@ $('#est2').click(function (){
 });
 
 function cambiarEstilo(estilo) {
-  $('link[href*="css/style').attr('href','css/'+estilo+'.css');
+  //$('link[href*="css/style').attr('href','css/'+estilo+'.css');
+  $('#css').attr('href','css/'+estilo+'.css');
 }
