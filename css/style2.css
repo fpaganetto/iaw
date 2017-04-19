@@ -38,3 +38,8 @@ html,body{
 .carousel-background{
   background-color: rgba(255,255,255,0.1);
 }
+
+.footer-bottom{
+  color: black;
+  background-color: white;
+}
