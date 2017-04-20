@@ -2,7 +2,7 @@
 var autoPersonalizado = {}; //variable global conteniendo los datos seleccionados por un usuario
 
 var request = new XMLHttpRequest();
-request.open("GET", "/app/opciones.json");
+request.open("GET", "./app/opciones.json");
 request.responseType = "json";
 request.send();
 request.onload = function() { //lo que ocurre al recibir la respuesta del servidor
