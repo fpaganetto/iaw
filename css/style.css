@@ -26,8 +26,8 @@ html,body {
 .navbar {
   /*background-color: black;*/
   /*background-color: white;*/
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 40px;
+  padding-right: 40px;
   padding-top: 15px;
   padding-bottom: 15px;
   color: white;
@@ -129,7 +129,7 @@ html,body {
 }
 
 canvas {
-  background-image: url('../img/cero.png');
+  background-image: url('../app/img/cero.png');
   background-size: 100% 100%;
   width: 100%;
   height: auto;
