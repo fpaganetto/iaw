@@ -2,7 +2,8 @@
   "opciones": [
     {
       "nombre": "Color",
-      "valores": ["Amarillo", "Verde", "Rojo", "Azul", "Cromado"]
+      "valores": ["Amarillo", "Verde", "Rojo", "Azul", "Cromado"],
+      "colors": {"Amarillo":"#FF6D00", "Verde":"#1B5E20", "Rojo":"#B71C1C", "Azul":"#0D47A1", "Cromado":"#212121"}
     },
     {
       "nombre": "Llantas",

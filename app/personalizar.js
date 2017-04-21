@@ -1,13 +1,14 @@
 //Obtenemos los datos a cargar en la página web a partir del JSON que los contiene, se lo pedimos al servidor
 var autoPersonalizado = {}; //variable global conteniendo los datos seleccionados por un usuario
+var jsonOpciones;
 
 var request = new XMLHttpRequest();
 request.open("GET", "./app/opciones.json");
 request.responseType = "json";
 request.send();
 request.onload = function() { //lo que ocurre al recibir la respuesta del servidor
-  var opciones = request.response;
-  cargarOpciones(opciones);
+  jsonOpciones = request.response;
+  cargarOpciones(jsonOpciones);
   cargarRecordado();
 }
 
@@ -112,6 +113,15 @@ function dibujar(opcion,valor){
   var canvas = document.getElementById("imagen-personalizada");
   var ctx = canvas.getContext("2d");
   var imageObj = new Image();
+
+  if(opcion=="Color"){
+    ctx.font="70pt SignPainter";
+    var color = jsonOpciones["opciones"][0]["colors"][valor];
+    ctx.fillStyle = color;
+    ctx.fillText("Adder",106,116);
+  }
+
+
   imageObj.onload = function() {//dibujar cuando la imagen esté cargada
     ctx.drawImage(imageObj, 0, 0, canvas.width, canvas.height);
   };
