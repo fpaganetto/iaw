@@ -105,9 +105,14 @@
         <div class="col-lg-4">
           <div class="panel-group" id="accordionOpciones" role="tablist" aria-multiselectable="true">
             </div>
-
-            <button type="submit" class="btn btn-default" id="recordar">Recordar</button>
-              <button type="submit" class="btn btn-default" id="olvidar">Olvidar</button>
+            <div class="btn-group-vertical">
+              <button type="submit" class="btn btn-block btn-recordar" id="recordar" 
+              data-toggle="tooltip" data-placement="top"
+              title="Guarda las opciones elegidas, para que al abrir nuevamente el sitio web permanezcan seleccionadas">Recordar</button>
+              <button type="submit" class="btn btn-block btn-olvidar" id="olvidar"
+              data-toggle="tooltip" data-placement="top"
+              title="Elimina la cookie que memoriza las opciones">Olvidar</button>
+            </div>
         </div>
 
         <div class="col-lg-8">

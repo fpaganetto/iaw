@@ -21,3 +21,7 @@ function cambiarEstilo(estilo) {
   //$('link[href*="css/style').attr('href','css/'+estilo+'.css');
   $('#css').attr('href','css/'+estilo+'.css');
 }
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip();
+})

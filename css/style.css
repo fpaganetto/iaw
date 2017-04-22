@@ -170,3 +170,29 @@ dt {
 .not-allowed{
   cursor:not-allowed;
 }
+
+.btn-recordar{
+  background-color: #007600;
+  color: white;
+}
+.btn-recordar:hover{
+  background-color: #00CE00;
+  color: white;
+}
+.btn-recordar:active{
+  background-color: #003C00;
+  color: white;
+}
+
+.btn-olvidar{
+  background-color: #760000;
+  color: white;
+}
+.btn-olvidar:hover{
+  background-color: #CE0000;
+  color: white;
+}
+.btn-olvidar:active{
+  background-color: #3C0000;
+  color: white;
+}
