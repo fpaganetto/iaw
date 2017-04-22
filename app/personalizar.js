@@ -118,7 +118,7 @@ function dibujar(opcion,valor){
     ctx.font="70pt SignPainter";
     var color = jsonOpciones["opciones"][0]["colors"][valor];
     ctx.fillStyle = color;
-    ctx.fillText("Adder",106,116);
+    ctx.fillText("Adder",105.5,116);
   }
 
 
