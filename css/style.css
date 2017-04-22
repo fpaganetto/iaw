@@ -167,3 +167,6 @@ dt {
 .boton-estilo{
   cursor:pointer;
 }
+.not-allowed{
+  cursor:not-allowed;
+}
